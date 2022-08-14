@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First step with DOM</title>
+    <style>
+        body {
+            background-color: rgba(93, 93, 212, 0.473);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Starting study with DOM</h1>
+    <p>Here go the result</p>
+    <p>Learning how to use <strong>DOM</strong> in JavaScript</p>
+    <div id="msg">Clique up</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        //window.document.write('Writed: ' + p1.innerText)
+        //document.write(p1.innerHTML) 
+        var d = window.document.getElementById('msg')
+        document.write(d.innerText)
+        d.style.background = 'gray'
+        
+        var b = window.document.querySelector('div#msg')
+        d.style.color = 'green'
+    </script>
+</body>
+</html>
