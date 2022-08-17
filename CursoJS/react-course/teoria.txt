@@ -1,0 +1,13 @@
+React:
+    - Biblioteca utilizada para criação de interface de usuário
+        - interface Web
+        - interface Mobile
+        ' interface SmartWach
+
+    - Possui o conceito de componentes
+    - Componente:
+        - Função JavaScript que retorna a síntaxe "jsx (html & js)"
+
+        - Vantagens
+            -Reusabilidade de código...
+                Criando um componente uma vez e usa quantas vezes forem possíveis na aplicação
