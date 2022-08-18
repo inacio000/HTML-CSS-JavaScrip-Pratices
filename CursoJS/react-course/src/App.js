@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
+
+import Tasks from "./components/Tasks";
+import "./App.css";
 
 const App = () => {
-  const msg = 'Hello world!'
+  const [tasks, setTasks] = useState([
+      {
+        id: '1',
+        tittle: 'Study programmation',
+        complite: false
+      },
+      {
+        id: '2',
+        tittle: 'Read book',
+        complite: true
+      },
+      {
+        id: '2',
+        tittle: 'Read book',
+        complite: true
+      }
+  ]); // state
+
   return (
-    <h1>{msg}</h1>
+      <>
+          <div className="container">
+              <Tasks tasks={tasks} />
+          </div>;
+      </>
   );
 };
 
