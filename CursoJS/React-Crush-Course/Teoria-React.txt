@@ -1,0 +1,84 @@
+Raect:
+    - Biblioteca JavaScript para desenvolvimento de aplicações front-end
+
+    - Estas aplicações são chamadas SPA (Single Page Application)
+
+    - A arquitetura do React é baseada em componentes
+
+    - Pode ser inserido em uma aplicação ou podemos criar a aplicação apenas com React
+
+    - É mantido pelo Facebook
+
+npm install json-server: Para simular uma API, permitindo fazer "Requisições Assîncronas" com um servidor fictício para similação de "Requisições http".
+    - Após instalação, modificamos o ficheiro "package.json" adicionando a seguinte linha de código no "scrips":
+        "server": "json-server --watch data/db.json --port 5000"
+            onde:
+                - server: o banco que será monitorado
+                - data/db.json: caminho do ficheiro
+                - --port 5000: porta onde estará o servidor
+    - npm run server: para testar a API
+
+Diretorios/arquivos React:
+    - node_modules (dir): Onde o React instala as suas dependências
+        Diretorio com n pacotes
+
+    - public (dir): Onde fica os nossos arquivos públicos
+        - logo da aplicação
+        - favicon
+        - index.html:
+            - <div id="root"></div>: Responsável por renderizar a aplicação do React.
+    -src (dir):
+        -App.js: componente principal da aplicação (componente PAI). Tem a sua importação feita no arquivo "index.js".
+
+        - arquivos de verificação da aplicação: Para fazer os testes das nossas views/funcionalidades da nossa aplicação.
+            reportWebVitals.js
+            setupTests.js
+
+        - index.css (file): arquivo global
+
+    -.gitignore (file): Para ignorar os arquivos que a gente não quer que subam no repositório do git.
+
+    -package.json (file): Contem os scripts e as dependências da nossa aplicação
+
+    -README.md (file): Como funciona o React (como rodar a nossa aplicação)
+
+Eventos React:
+    - Normalmente são chamados de "handle_______"
+    fff
+    - Funcções com eventos
+        - Chamando pelo nome de uma função criada.
+        - Chamando a própria função que execula no elemento 
+
+
+Hooks:
+    - começa com "use..."
+        - useState: hooks que serve para gerenciar valores/status e renderizar componentes quando for necessário
+            - invocando o hook (useState) para gerenciar o acesso ao valor da variavel e a alteração do valor da variável
+
+        - useEffect: hook baseado em dados, quando o usuário entra na página
+            - Aceita função anônima como argumento
+
+RenderCond: Condições em componentes
+    - Renderização condicional em um componente
+        {x > 5 && <p>X é maior que 5</p>}
+        {x > 5 ? <p>X é um número alto</p> : <p>X é um número baixo</p>}
+
+    - props: Propriedades passadas do componente PAI para o componente FILHO.
+        - Onde o valor é passado dinamicamente
+
+Fragment: Sem uma div PAI
+    <>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+    </>
+
+Container: Um componente que abraça outros elementos/componentes
+    - Funciona ativando a funcionalidade/Propriedade especial "children"
+        - children: Permite colocar elementos dentro da tag e imprimir em qualquer parte do nosso componente.
+
+Controled put: limpar o formulário após o input ser enviado
+
+Fetch API (fetch()): Recurso nativo do JavaScript
+
+Catch (.cath()): Método opcional para imprimir o erro
